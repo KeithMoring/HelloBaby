@@ -49,7 +49,7 @@ namespace WcfServiceForIOS
             RequestFormat = WebMessageFormat.Json,
             ResponseFormat = WebMessageFormat.Json,
             BodyStyle = WebMessageBodyStyle.Wrapped,
-            UriTemplate = "createUser"
+            UriTemplate = "CreateUser"
             )]
         int NewUser(string name,int sex,string Md5_password,string role,string email,string phoneNum);
         

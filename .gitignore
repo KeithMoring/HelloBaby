@@ -15,7 +15,9 @@ profile
 DerivedData
 *.hmap
 *.ipa
-
+bin
+*.suo
+obj
 # CocoaPods
 Pods
 
@@ -31,7 +33,8 @@ Pods
 .LSOverride
 
 # Icon must ends with two \r.
-Icon
+Icon
+
 
 # Thumbnails
 ._*

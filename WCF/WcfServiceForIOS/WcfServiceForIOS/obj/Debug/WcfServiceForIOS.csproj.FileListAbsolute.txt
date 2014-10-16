@@ -12,3 +12,5 @@ E:\Mac\macdoucument\Hellobaby\HelloBaby\WCF\WcfServiceForIOS\WcfServiceForIOS\bi
 E:\Mac\macdoucument\Hellobaby\HelloBaby\WCF\WcfServiceForIOS\WcfServiceForIOS\bin\WcfServiceForIOS.dll
 E:\Mac\macdoucument\Hellobaby\HelloBaby\WCF\WcfServiceForIOS\WcfServiceForIOS\bin\WcfServiceForIOS.pdb
 E:\Mac\macdoucument\Hellobaby\HelloBaby\WCF\WcfServiceForIOS\WcfServiceForIOS\bin\MySql.Data.dll
+E:\Mac\macdoucument\Hellobaby\HelloBaby\WCF\WcfServiceForIOS\WcfServiceForIOS\bin\Newtonsoft.Json.dll
+E:\Mac\macdoucument\Hellobaby\HelloBaby\WCF\WcfServiceForIOS\WcfServiceForIOS\bin\Newtonsoft.Json.xml
