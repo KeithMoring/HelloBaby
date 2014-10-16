@@ -1,0 +1,6 @@
+C:\Users\Wind\documents\visual studio 2013\Projects\WcfServiceForIOS\WcfServiceForIOS\bin\WcfServiceForIOS.dll.config
+C:\Users\Wind\documents\visual studio 2013\Projects\WcfServiceForIOS\WcfServiceForIOS\bin\WcfServiceForIOS.dll
+C:\Users\Wind\documents\visual studio 2013\Projects\WcfServiceForIOS\WcfServiceForIOS\bin\WcfServiceForIOS.pdb
+C:\Users\Wind\documents\visual studio 2013\Projects\WcfServiceForIOS\WcfServiceForIOS\obj\Release\WcfServiceForIOS.csprojResolveAssemblyReference.cache
+C:\Users\Wind\documents\visual studio 2013\Projects\WcfServiceForIOS\WcfServiceForIOS\obj\Release\WcfServiceForIOS.dll
+C:\Users\Wind\documents\visual studio 2013\Projects\WcfServiceForIOS\WcfServiceForIOS\obj\Release\WcfServiceForIOS.pdb
