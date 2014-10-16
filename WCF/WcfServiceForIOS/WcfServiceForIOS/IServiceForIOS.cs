@@ -42,6 +42,16 @@ namespace WcfServiceForIOS
                  BodyStyle = WebMessageBodyStyle.Wrapped,
                  UriTemplate = "PosterJson/{name}/{level}/{note}/{mm}")]
         ResponsePoster PosterManagerJson(string name, string level, string note,string mm);
+
+        ///Creat new user
+        [OperationContract]
+        [WebInvoke(Method = "POST",
+            RequestFormat = WebMessageFormat.Json,
+            ResponseFormat = WebMessageFormat.Json,
+            BodyStyle = WebMessageBodyStyle.Wrapped,
+            UriTemplate = "createUser"
+            )]
+        int NewUser(string name,int sex,string Md5_password,string role,string email,string phoneNum);
         
     }
     [DataContract(Namespace = "http://www.entlib.com/business")]

@@ -41,7 +41,18 @@ namespace WcfServiceForIOS
             ResponsePoster response = new ResponsePoster { Name = name, Level = levle, Note = note };
             return response;
         }
-    }
         #endregion
+        public int NewUser(string name, int sex, string Md5_password, string role, string email, string phoneNum)
+        {
+            DataConn dataconn = new DataConn();
+            List<sqlparameters> parameters = new List<sqlparameters>();
+            sqlparameters p_name = new sqlparameters("user_name",name);
+            parameters.Add(p_name);
+            dataconn.StroedGet("",parameters);
+            return 0;
+        }
+    }
+      
+
 
 }
