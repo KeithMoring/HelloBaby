@@ -115,7 +115,15 @@ namespace WcfServiceForIOS
             // conn.Close();
             return dt;
         }
-
+        /// <summary>
+        /// put the mysqlout on the first Processstore as the parameter
+        /// </summary>
+        /// <param name="mysqlout"></param>
+        /// <param name="Parameters"></param>
+        /// <param name="typeStr"></param>
+        /// <param name="returnsize"></param>
+        /// <param name="StoreName"></param>
+        /// <returns></returns>
         public string getdata(string mysqlout, List<sqlparameters> Parameters, string typeStr, int returnsize, string StoreName)
         {
 
@@ -155,7 +163,7 @@ namespace WcfServiceForIOS
 
             //得到输出参数的值,把赋值给name,注意,这里得到的是object类型的,要进行相应的类型轮换
             //  string name = cmd.Parameters["_FLAG"].Value.ToString();
-
+            conn.Close();
             return name;
 
         }

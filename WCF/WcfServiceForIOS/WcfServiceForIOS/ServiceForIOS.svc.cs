@@ -66,6 +66,7 @@ namespace WcfServiceForIOS
                 parameters.Add(p_name);               
                 string exist_num=dataconn.getdata("get_exist",parameters,"int",2,"PKG_Exist_User");
                 if (exist_num == "1") {
+
                     return 2;
                 }
                 sqlparameters p_sex = new sqlparameters("r_user_sex", sex);
@@ -76,7 +77,7 @@ namespace WcfServiceForIOS
                 parameters.Add(p_role);
                 sqlparameters p_email = new sqlparameters("r_user_email", email);
                 parameters.Add(p_email);
-                sqlparameters p_phoneNum = new sqlparameters("r_user_phoneNum", email);
+                sqlparameters p_phoneNum = new sqlparameters("r_user_phoneNum", phoneNum);
                 parameters.Add(p_phoneNum);
                 dataconn.StroedGet("PKG_Creat_User", parameters);
                 return 1;
@@ -96,8 +97,9 @@ namespace WcfServiceForIOS
                 int c = b / a;
             }
             catch (Exception e) {
-                ILog log = log4net.LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
-                log.Error("E", e);
+               // ILog log = log4net.LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
+                //log.Error("E", e);
+                WcfLog.Log(logLevel.Error, e);
             }
         }
 

@@ -4,3 +4,12 @@ C:\Users\Wind\documents\visual studio 2013\Projects\WcfServiceForIOS\WcfServiceF
 C:\Users\Wind\documents\visual studio 2013\Projects\WcfServiceForIOS\WcfServiceForIOS\obj\Release\WcfServiceForIOS.csprojResolveAssemblyReference.cache
 C:\Users\Wind\documents\visual studio 2013\Projects\WcfServiceForIOS\WcfServiceForIOS\obj\Release\WcfServiceForIOS.dll
 C:\Users\Wind\documents\visual studio 2013\Projects\WcfServiceForIOS\WcfServiceForIOS\obj\Release\WcfServiceForIOS.pdb
+E:\Mac\macdoucument\Hellobaby\HelloBaby\WCF\WcfServiceForIOS\WcfServiceForIOS\bin\WcfServiceForIOS.dll.config
+E:\Mac\macdoucument\Hellobaby\HelloBaby\WCF\WcfServiceForIOS\WcfServiceForIOS\bin\WcfServiceForIOS.dll
+E:\Mac\macdoucument\Hellobaby\HelloBaby\WCF\WcfServiceForIOS\WcfServiceForIOS\bin\WcfServiceForIOS.pdb
+E:\Mac\macdoucument\Hellobaby\HelloBaby\WCF\WcfServiceForIOS\WcfServiceForIOS\bin\MySql.Data.dll
+E:\Mac\macdoucument\Hellobaby\HelloBaby\WCF\WcfServiceForIOS\WcfServiceForIOS\bin\Newtonsoft.Json.dll
+E:\Mac\macdoucument\Hellobaby\HelloBaby\WCF\WcfServiceForIOS\WcfServiceForIOS\bin\Newtonsoft.Json.xml
+E:\Mac\macdoucument\Hellobaby\HelloBaby\WCF\WcfServiceForIOS\WcfServiceForIOS\obj\Release\WcfServiceForIOS.csprojResolveAssemblyReference.cache
+E:\Mac\macdoucument\Hellobaby\HelloBaby\WCF\WcfServiceForIOS\WcfServiceForIOS\obj\Release\WcfServiceForIOS.dll
+E:\Mac\macdoucument\Hellobaby\HelloBaby\WCF\WcfServiceForIOS\WcfServiceForIOS\obj\Release\WcfServiceForIOS.pdb

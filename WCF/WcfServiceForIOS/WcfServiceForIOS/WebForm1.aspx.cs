@@ -27,7 +27,7 @@ namespace WcfServiceForIOS
         //    WcfServiceForIOS.logtest log = new WcfServiceForIOS.logtest();
           //  log.testLog();
          // TextBox1.Text = name;
-            
+            //NewUser()
          
         }
     }
