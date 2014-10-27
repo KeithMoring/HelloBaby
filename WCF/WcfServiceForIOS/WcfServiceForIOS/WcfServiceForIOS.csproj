@@ -83,11 +83,11 @@
     <Content Include="App_Code\GetIPT.cs" />
     <Content Include="App_Code\GetUserIP.cs" />
     <Content Include="App_Code\Jsonconn.cs" />
-    <Content Include="App_Code\MyMD5.cs" />
     <Content Include="App_Code\NewUser.cs" />
     <Content Include="App_Code\rankfuction.cs" />
     <Content Include="App_Code\Registerck.cs" />
     <Compile Include="App_Code\DataConn.cs" />
+    <Compile Include="App_Code\MyMD5.cs" />
     <Compile Include="WcfLog.cs" />
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>

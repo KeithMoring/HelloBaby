@@ -71,6 +71,7 @@ namespace WcfServiceForIOS
                 }
                 sqlparameters p_sex = new sqlparameters("r_user_sex", sex);
                 parameters.Add(p_sex);
+                Md5_password = MyMD5.ConvertintoMD5(Md5_password);
                 sqlparameters p_Md5_password = new sqlparameters("r_user_Password", Md5_password);
                 parameters.Add(p_Md5_password);
                 sqlparameters p_role = new sqlparameters("r_Role", role);

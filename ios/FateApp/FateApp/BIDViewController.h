@@ -10,5 +10,8 @@
 
 @interface BIDViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *lable;
-
+@property (weak, nonatomic) IBOutlet UIButton *TestWcf;
+- (IBAction)TestforWcf:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *WcfTestLable;
+-(void)Createuser;
 @end
