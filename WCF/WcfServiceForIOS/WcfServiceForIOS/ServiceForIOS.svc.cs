@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 using System.ServiceModel.Activation;
-using log4net;
+//using log4net;
 using System.Reflection;
 
 
@@ -83,8 +83,9 @@ namespace WcfServiceForIOS
                 return 1;
             }
             catch (Exception e) {
-                ILog log = log4net.LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
-                log.Error("E",e);
+               // ILog log = log4net.LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
+               // log.Error("E",e);
+                WcfLog.Log(logLevel.Error,e);
                 return 0; }
             
         }
