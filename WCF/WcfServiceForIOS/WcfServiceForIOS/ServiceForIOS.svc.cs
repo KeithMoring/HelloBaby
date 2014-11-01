@@ -90,7 +90,42 @@ namespace WcfServiceForIOS
                 return 0; }
             
         }
-
+        /// <summary>
+        /// if return N is not pass ,P is pass ,E is error may be network
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
+        public string Login(string name, string password) {
+            try
+            {
+                string pass = "Pass";
+                DataConn con = new DataConn();
+                List<sqlparameters> parameters = new List<sqlparameters>();
+                //sqlparameters p_pass = new sqlparameters("pass",pass);
+                sqlparameters p_name = new sqlparameters("p_name", name);
+                password = MyMD5.ConvertintoMD5(password);
+                sqlparameters p_password = new sqlparameters("p_password", password);
+               // parameters.Add(p_pass);
+                parameters.Add(p_name);               
+                parameters.Add(p_password);
+               string result= con.getdata(pass, parameters, "string", 10, "LoginCheck");
+                if (pass == "Yes")
+                {
+                    return "P";
+                }
+                else {
+                    return "N";
+                }
+                
+                
+                
+            }
+            catch (Exception e) {
+                WcfLog.Log(logLevel.Error, e);
+                return "E";
+            }
+        }
         public void testLog() {
             try
             {

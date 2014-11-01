@@ -42,7 +42,7 @@ namespace WcfServiceForIOS
                  BodyStyle = WebMessageBodyStyle.Wrapped,
                  UriTemplate = "PosterJson/{name}/{level}/{note}/{mm}")]
         ResponsePoster PosterManagerJson(string name, string level, string note,string mm);
-
+        #region create user and login
         ///Creat new user
         [OperationContract]
         [WebInvoke(Method = "POST",
@@ -52,8 +52,19 @@ namespace WcfServiceForIOS
             UriTemplate = "CreateUser"
             )]
         int NewUser(string name,int sex,string Md5_password,string role,string email,string phoneNum);
-        
+
+        //login new user
+        [OperationContract]
+        [WebInvoke(Method = "POST",
+            RequestFormat = WebMessageFormat.Json,
+            ResponseFormat = WebMessageFormat.Json,
+            BodyStyle = WebMessageBodyStyle.Wrapped,
+            UriTemplate = "Login")]
+        string Login(string name,string password);
+        #endregion
+
     }
+
     [DataContract(Namespace = "http://www.entlib.com/business")]
     public class RequestPoster {
         [DataMember]

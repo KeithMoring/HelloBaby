@@ -116,7 +116,7 @@ namespace WcfServiceForIOS
             return dt;
         }
         /// <summary>
-        /// put the mysqlout on the first Processstore as the parameter
+        /// put the mysqlout on the first Processstore as the parameter,as the first name of storename paramter 
         /// </summary>
         /// <param name="mysqlout"></param>
         /// <param name="Parameters"></param>
