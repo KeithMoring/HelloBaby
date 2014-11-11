@@ -7,11 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface BIDViewController : UIViewController
+#import "ASIHTTPRequest.h"
+@interface BIDViewController : UIViewController<ASIHTTPRequestDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *lable;
 @property (weak, nonatomic) IBOutlet UIButton *TestWcf;
 - (IBAction)TestforWcf:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *WcfTestLable;
 -(void)Createuser;
+@property (weak, nonatomic) IBOutlet UITextField *text_username;
+@property (weak, nonatomic) IBOutlet UITextField *text_userPassword;
+@property (weak, nonatomic) IBOutlet UITextField *text_userEmail;
+- (IBAction)btn_registerUser:(id)sender;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityView;
+
 @end

@@ -16,7 +16,7 @@ namespace WcfServiceForIOS
     [AspNetCompatibilityRequirements(RequirementsMode=AspNetCompatibilityRequirementsMode.Allowed)]
    
     
-    public class ServiceForIOS : IServiceForIOS
+    public class ServiceForIOS :IServiceForIOS
     {
         #region example
         public void DoWork()
@@ -110,7 +110,7 @@ namespace WcfServiceForIOS
                 parameters.Add(p_name);               
                 parameters.Add(p_password);
                string result= con.getdata(pass, parameters, "string", 10, "LoginCheck");
-                if (pass == "Yes")
+                if (result == "Yes")
                 {
                     return "P";
                 }

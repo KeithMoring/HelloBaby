@@ -7,7 +7,7 @@
 //
 
 #import "BIDViewController.h"
-#import "ASIHTTPRequest.h"
+//#import "ASIHTTPRequest.h"
 #define  ServerUrl "http://192.168.211.1/ServiceForIOS.svc/"
 @interface BIDViewController ()
 //-(void)CreateUser;
@@ -40,6 +40,7 @@
 }
 
 - (IBAction)TestforWcf:(id)sender {
+    /*
     NSMutableDictionary *registerInfo=[[NSMutableDictionary alloc]init];
     [registerInfo setValue:@"Keith" forKey:@"name"];
     [registerInfo setValue:@"1" forKey:@"sex"];
@@ -65,6 +66,8 @@
         NSDictionary *data=[NSJSONSerialization JSONObjectWithData:response options:0 error:&error];
         self.WcfTestLable.text= [NSString stringWithFormat:@"%@",[data objectForKey:@"NewUserResult"]];
     }
+     */
+    [self Createuser];
 }
 -(void)Createuser{
     /*
@@ -90,32 +93,73 @@
      }
      }
      */
+    @try {
+        
+  
     NSMutableDictionary *registerInfo=[[NSMutableDictionary alloc]init];
-    [registerInfo setValue:@"Keith" forKey:@"name"];
+    [registerInfo setValue:self.text_username.text forKey:@"name"];
     [registerInfo setValue:@"1" forKey:@"sex"];
-    [registerInfo setValue:@"111966" forKey:@"Md5_password"];
-    [registerInfo setValue:@"1" forKey:@"role"];
-    [registerInfo setValue:@"xiooix@126.com" forKey:@"email"];
+    [registerInfo setValue:self.text_userPassword.text forKey:@"Md5_password"];
+    [registerInfo setValue:@"user" forKey:@"role"];
+    [registerInfo setValue:self.text_userEmail.text forKey:@"email"];
     [registerInfo setValue:@"15501025919" forKey:@"phoneNum"];
     NSError *error=nil;
     NSData *Jsondata=[NSJSONSerialization dataWithJSONObject:registerInfo options:NSJSONWritingPrettyPrinted error:&error];
     NSMutableData *multablejsondata=[NSMutableData dataWithData:Jsondata];
     NSMutableString *Str_serverUrl=[[NSMutableString alloc]initWithString:@ServerUrl];
-    [Str_serverUrl appendString:@"/CreateUser"];
+    [Str_serverUrl appendString:@"CreateUser"];
     NSURL *url=[NSURL URLWithString:Str_serverUrl];
     ASIHTTPRequest *request=[ASIHTTPRequest requestWithURL:url];
     [request addRequestHeader:@"Content-Type" value:@"application/json; encoding=utf-8"];
     [request addRequestHeader:@"Accept" value:@"application/json"];
     [request setRequestMethod:@"POST"];
     [request setPostBody:multablejsondata];
-    [request startSynchronous];
+    [request setDelegate:self];
+    [request startAsynchronous];
+        self.activityView.hidden=false;
+     
+    /*
     NSError *requestError=[request error];
     if(!requestError){
         NSData *response = [request responseData];
         NSDictionary *data=[NSJSONSerialization JSONObjectWithData:response options:0 error:&error];
-        self.WcfTestLable.text=[data objectForKey:@"JSONDataResult"];
+        self.WcfTestLable.text= [NSString stringWithFormat:@"%@",[data objectForKey:@"NewUserResult"]];
     }
-    
+     */
+    }@catch(NSException *e){
+        NSLog(@"create user meet exception: %@",e);
+    }
+   
  
+}
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    self.activityView.hidden=true;
+    
+}
+-(void)requestFinished:(ASIHTTPRequest *)request{
+    NSError *error=[request error];
+    if(!error){
+        NSData *response=[request responseData];
+        NSDictionary *data=[NSJSONSerialization JSONObjectWithData:response options:0 error:&error];
+        NSString *resultCreatUser=[NSString stringWithFormat:@"%@",[data objectForKey:@"NewUserResult"]];
+        self.activityView.hidden=true;
+        if([resultCreatUser isEqualToString:@"1"]){
+        NSLog(@"%@",@"Create user success!");
+        }else if([resultCreatUser isEqualToString:@"0"])
+        { NSLog(@"%@",@"create user meet some problem!");}
+        else{
+            NSLog(@"%@",@"this user has exit");
+        }
+    }
+}
+-(void)requestFailed:(ASIHTTPRequest *)request{
+      NSError *error = [request error];
+    NSLog(@"%@",error);
+}
+
+- (IBAction)btn_registerUser:(id)sender {
+    
+    [self Createuser];
 }
 @end
