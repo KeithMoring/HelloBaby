@@ -126,6 +126,20 @@ namespace WcfServiceForIOS
                 return "E";
             }
         }
+        /// <summary>
+        /// get the userid by the username
+        /// </summary>
+        /// <param name="username"></param>
+        /// <returns></returns>
+        public int GetUserID(string username) {
+            sqlparameters para = new sqlparameters("username",username);
+            List<sqlparameters> paras = new List<sqlparameters>();
+            paras.Add(para);
+            DataConn con = new DataConn();
+           string userid= con.getdata("User_ID", paras, "int", 20, "PKG_Get_UserID");
+           return Convert.ToInt32(userid);
+        }
+        
         public void testLog() {
             try
             {

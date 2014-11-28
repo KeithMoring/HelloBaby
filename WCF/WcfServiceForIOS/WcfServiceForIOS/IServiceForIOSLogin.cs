@@ -59,7 +59,15 @@ namespace WcfServiceForIOS
             UriTemplate = "Login")]
         string Login(string name, string password);
         #endregion
-
+        #region get the username and userid
+        [OperationContract]
+        [WebInvoke(Method = "GET",
+               RequestFormat = WebMessageFormat.Json,
+               ResponseFormat = WebMessageFormat.Json,
+               BodyStyle = WebMessageBodyStyle.Wrapped,
+               UriTemplate = "GetUserId/{username}")]
+        int GetUserID(string username);
+        #endregion
     }
     [DataContract(Namespace = "http://www.entlib.com/business")]
     public class RequestPoster

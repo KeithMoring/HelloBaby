@@ -107,6 +107,7 @@
     <Compile Include="App_Code\MyMD5.cs" />
     <Compile Include="IServiceForIOSLogin.cs" />
     <Compile Include="IServiceForIOSPoster.cs" />
+    <Compile Include="Model\ConnectStatus.cs" />
     <Compile Include="Model\customer.cs" />
     <Compile Include="Model\Disease.cs" />
     <Compile Include="Model\Poster.cs" />
@@ -114,6 +115,7 @@
     <Compile Include="ServiceForIOSPoster.svc.cs">
       <DependentUpon>ServiceForIOSPoster.svc</DependentUpon>
     </Compile>
+    <Compile Include="Tools\ExteneClassMeathod.cs" />
     <Compile Include="WcfLog.cs" />
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>

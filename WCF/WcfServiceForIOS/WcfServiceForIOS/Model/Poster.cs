@@ -12,11 +12,11 @@ namespace WcfServiceForIOS.Model
     public class Poster
     {
         [DataMember]
-        public string OwnerName { get; set; }
+        public int User_ID { get; set; }
         [DataMember]
         public string Title {get;set; }
          [DataMember]
-        public string Content { get; set; }
+        public string PosterInput { get; set; }
          [DataMember]
         public int VisitNum { get; set; }
          [DataMember]
@@ -26,6 +26,6 @@ namespace WcfServiceForIOS.Model
          [DataMember]
         public int OppsitionNum { get; set; }
          [DataMember]
-        public int ScoresNun { get; set; }
+        public int ScoresNum { get; set; }
     }
 }

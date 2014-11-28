@@ -18,9 +18,9 @@ namespace WcfServiceForIOS
             BodyStyle = WebMessageBodyStyle.Wrapped,
             RequestFormat = WebMessageFormat.Json,
             ResponseFormat = WebMessageFormat.Json,
-            UriTemplate = "poster"
+            UriTemplate = "SavePoster"
             )]
-        Poster SavePoster(string userName, string posterTitle, string posterContent);
+        ConnectStatus SavePoster(Poster newPoster);
 
         [OperationContract]
         [WebInvoke(Method = "GET",
