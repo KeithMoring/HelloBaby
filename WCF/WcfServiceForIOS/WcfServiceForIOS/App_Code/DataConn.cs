@@ -5,6 +5,8 @@ using System.Web;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 using System.Data;
+using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace WcfServiceForIOS
 {
@@ -167,5 +169,54 @@ namespace WcfServiceForIOS
             return name;
 
         }
+        /// <summary>
+        /// 读取多个返回集，返回List<DataTable>
+        /// </summary>
+        /// <param name="StoredName"></param>
+        /// <param name="Parameters"></param>
+        /// <returns></returns>
+        public List<DataTable> StroedGetTableList(string StoredName, List<sqlparameters> Parameters)
+        {
+
+            MySqlDataAdapter mysqldata = new MySqlDataAdapter();
+            MySqlCommand sqlCommand = new MySqlCommand();
+            sqlCommand.CommandText = StoredName;
+            sqlCommand.CommandType = CommandType.StoredProcedure;
+            sqlCommand.Connection = conn;
+
+            for (int i = 0; i < Parameters.Count; i++)
+            {
+                sqlCommand.Parameters.AddWithValue(Parameters[i].name, Parameters[i].pvalue);
+            }
+            conn.Open();
+            List<DataTable> dts = new List<DataTable>();
+            MySqlDataReader mysqlreser = sqlCommand.ExecuteReader();//mysqlreader无构造函数
+            bool re = true;
+            System.Threading.CancellationToken _cts;//用于Cancel用的
+            while (re)
+            {
+                DataTable dt = new DataTable();
+                mysqldata.FillAsync(dt, mysqlreser).Wait(_cts);//等待线程完成
+                /*
+                mysqldata.FillAsync(dt, mysqlreser, _cts).ContinueWith(
+                    (ctx) => {
+                        if (!ctx.IsFaulted&&!ctx.IsCanceled)
+                        {
+                            dts.Add(dt);
+                            re = mysqlreser.NextResult();
+                        }
+                    }
+                    );
+                  */
+                dts.Add(dt);
+                re = mysqlreser.NextResult();
+                Trace.WriteLine(dt.Rows.Count);        
+
+            }
+            conn.Close();
+            return dts;
+
+        }
+
     }
 }

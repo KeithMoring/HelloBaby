@@ -20,7 +20,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
-
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    //self.activityView.hidden=YES;
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -116,7 +119,7 @@
     [request setPostBody:multablejsondata];
     [request setDelegate:self];
     [request startAsynchronous];
-        self.activityView.hidden=false;
+       
      
     /*
     NSError *requestError=[request error];
@@ -134,7 +137,7 @@
 }
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    self.activityView.hidden=true;
+   // self.activityView.hidden=true;
     
 }
 -(void)requestFinished:(ASIHTTPRequest *)request{
@@ -143,10 +146,16 @@
         NSData *response=[request responseData];
         NSDictionary *data=[NSJSONSerialization JSONObjectWithData:response options:0 error:&error];
         NSString *resultCreatUser=[NSString stringWithFormat:@"%@",[data objectForKey:@"NewUserResult"]];
-        self.activityView.hidden=true;
+        [self.activityView stopAnimating];
         if([resultCreatUser isEqualToString:@"1"]){
         NSLog(@"%@",@"Create user success!");
-        }else if([resultCreatUser isEqualToString:@"0"])
+           /* self.loginview=[[BIDLoginViewController alloc]init];
+            [self.loginview setModalTransitionStyle:UIModalTransitionStyleCoverVertical ];
+            [self presentViewController:self.loginview animated:YES completion:^{NSLog(@"turn to login view");}];
+            [self dismissModalViewControllerAnimated:YES];
+        */
+            [self performSegueWithIdentifier:@"reTologin" sender:self];
+            }else if([resultCreatUser isEqualToString:@"0"])
         { NSLog(@"%@",@"create user meet some problem!");}
         else{
             NSLog(@"%@",@"this user has exit");
@@ -161,5 +170,6 @@
 - (IBAction)btn_registerUser:(id)sender {
     
     [self Createuser];
+    [self.activityView startAnimating];
 }
 @end

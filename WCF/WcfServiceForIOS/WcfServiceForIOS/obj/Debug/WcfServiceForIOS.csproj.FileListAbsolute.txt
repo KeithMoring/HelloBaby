@@ -78,3 +78,5 @@ E:\Mac\IOSAPP\IOSServer\HelloBaby\WCF\WcfServiceForIOS\WcfServiceForIOS\bin\ko\S
 E:\Mac\IOSAPP\IOSServer\HelloBaby\WCF\WcfServiceForIOS\WcfServiceForIOS\bin\ru\System.Spatial.resources.dll
 E:\Mac\IOSAPP\IOSServer\HelloBaby\WCF\WcfServiceForIOS\WcfServiceForIOS\bin\zh-Hans\System.Spatial.resources.dll
 E:\Mac\IOSAPP\IOSServer\HelloBaby\WCF\WcfServiceForIOS\WcfServiceForIOS\bin\zh-Hant\System.Spatial.resources.dll
+E:\Mac\IOSAPP\IOSServer\HelloBaby\WCF\WcfServiceForIOS\WcfServiceForIOS\bin\nunit.framework.dll
+E:\Mac\IOSAPP\IOSServer\HelloBaby\WCF\WcfServiceForIOS\WcfServiceForIOS\bin\nunit.framework.xml

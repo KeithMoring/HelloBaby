@@ -1,0 +1,81 @@
+
+/* Class = "IBUIButton"; normalTitle = "注销"; ObjectID = "1DR-3p-ebE"; */
+"1DR-3p-ebE.normalTitle" = "注销";
+
+/* Class = "IBUILabel"; text = "字母不少于3"; ObjectID = "71u-Rk-PL4"; */
+"71u-Rk-PL4.text" = "字母不少于3";
+
+/* Class = "IBUILabel"; text = "注册新用户"; ObjectID = "7ED-SB-eI7"; */
+"7ED-SB-eI7.text" = "注册新用户";
+
+/* Class = "IBUIButton"; normalTitle = "Test WCF"; ObjectID = "Cgs-Jk-cWA"; */
+"Cgs-Jk-cWA.normalTitle" = "Test WCF";
+
+/* Class = "IBUIButton"; normalTitle = "注册"; ObjectID = "FEo-TI-VEE"; */
+"FEo-TI-VEE.normalTitle" = "注册";
+
+/* Class = "IBUITextField"; placeholder = "username"; ObjectID = "Fhc-Zc-99F"; */
+"Fhc-Zc-99F.placeholder" = "username";
+
+/* Class = "IBUIButton"; normalTitle = "提交"; ObjectID = "I1K-2K-c35"; */
+"I1K-2K-c35.normalTitle" = "提交";
+
+/* Class = "IBUITextField"; placeholder = "Email"; ObjectID = "JBC-xy-x2e"; */
+"JBC-xy-x2e.placeholder" = "Email";
+
+/* Class = "IBUINavigationItem"; title = "主页"; ObjectID = "Odb-5A-bnV"; */
+"Odb-5A-bnV.title" = "主页";
+
+/* Class = "IBUITextField"; placeholder = "username"; ObjectID = "QSC-8K-tjP"; */
+"QSC-8K-tjP.placeholder" = "username";
+
+/* Class = "IBUITabBarItem"; title = "帖子"; ObjectID = "QbR-OG-sUF"; */
+"QbR-OG-sUF.title" = "帖子";
+
+/* Class = "IBUIButton"; normalTitle = "登录"; ObjectID = "Ry8-f7-hDM"; */
+"Ry8-f7-hDM.normalTitle" = "登录";
+
+/* Class = "IBUILabel"; text = "密码"; ObjectID = "XBA-iZ-SrJ"; */
+"XBA-iZ-SrJ.text" = "密码";
+
+/* Class = "IBUITextField"; placeholder = "password"; ObjectID = "YxO-cj-f6P"; */
+"YxO-cj-f6P.placeholder" = "password";
+
+/* Class = "IBUIButton"; normalTitle = "登录"; ObjectID = "b3d-Wb-74u"; */
+"b3d-Wb-74u.normalTitle" = "登录";
+
+/* Class = "IBUILabel"; text = "欢迎"; ObjectID = "b4w-Dy-QvS"; */
+"b4w-Dy-QvS.text" = "欢迎";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "fBR-yz-BLR"; */
+"fBR-yz-BLR.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "fK4-zV-BwF"; */
+"fK4-zV-BwF.text" = "Label";
+
+/* Class = "IBUILabel"; text = "登录"; ObjectID = "fjn-K2-vZ3"; */
+"fjn-K2-vZ3.text" = "登录";
+
+/* Class = "IBUITabBarItem"; title = "主页"; ObjectID = "h6K-s7-154"; */
+"h6K-s7-154.title" = "主页";
+
+/* Class = "IBUILabel"; text = "密码"; ObjectID = "ik6-fb-5RC"; */
+"ik6-fb-5RC.text" = "密码";
+
+/* Class = "IBUITextField"; placeholder = "password"; ObjectID = "jlL-Ui-DeR"; */
+"jlL-Ui-DeR.placeholder" = "password";
+
+/* Class = "IBUILabel"; text = "用户名"; ObjectID = "kdm-Xe-Ekz"; */
+"kdm-Xe-Ekz.text" = "用户名";
+
+/* Class = "IBUILabel"; text = "用户名"; ObjectID = "kky-gw-GfN"; */
+"kky-gw-GfN.text" = "用户名";
+
+/* Class = "IBUIButton"; normalTitle = "Test Json"; ObjectID = "meP-oU-k1g"; */
+"meP-oU-k1g.normalTitle" = "Test Json";
+
+/* Class = "IBUIButton"; normalTitle = "注册"; ObjectID = "tBb-9V-LNC"; */
+"tBb-9V-LNC.normalTitle" = "注册";
+
+/* Class = "IBUILabel"; text = "邮箱"; ObjectID = "ujb-zp-NFJ"; */
+"ujb-zp-NFJ.text" = "邮箱";

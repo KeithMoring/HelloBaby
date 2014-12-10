@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D31217041A2D6A6D00102A93 /* BIDAComplexMode.m in Sources */ = {isa = PBXBuildFile; fileRef = D31217031A2D6A6D00102A93 /* BIDAComplexMode.m */; };
+		D328C30B1A2D46550041F708 /* BIDObjectToNsDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = D328C30A1A2D46550041F708 /* BIDObjectToNsDictionary.m */; };
+		D387886C1A1198B700958851 /* SSKeychain.strings in Resources */ = {isa = PBXBuildFile; fileRef = D38788661A1198B700958851 /* SSKeychain.strings */; };
+		D387886D1A1198B700958851 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = D38788691A1198B700958851 /* SSKeychain.m */; };
+		D387886E1A1198B700958851 /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = D387886B1A1198B700958851 /* SSKeychainQuery.m */; };
+		D39A55641A287483002A7059 /* BIDUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D39A55631A287483002A7059 /* BIDUser.m */; };
+		D3A857AF1A04A6640061EB9A /* BIDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A857AE1A04A6640061EB9A /* BIDLoginViewController.m */; };
+		D3A857B21A04B2BA0061EB9A /* BIDJsonConn.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A857B11A04B2BA0061EB9A /* BIDJsonConn.m */; };
+		D3B167291A0DB60B00445200 /* BIDCommcode.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B167281A0DB60B00445200 /* BIDCommcode.m */; };
+		D3BDA5B91A1E266F00A990CC /* BIDNewPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BDA5B81A1E266F00A990CC /* BIDNewPoster.m */; };
+		D3BDA5BC1A1E272B00A990CC /* BIDPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BDA5BB1A1E272B00A990CC /* BIDPoster.m */; };
+		D3BE88911A064A36000BD33A /* BIDWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BE88901A064A36000BD33A /* BIDWelcomeViewController.m */; };
 		D3C90D4419FE136C00939406 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C90D4319FE136C00939406 /* Foundation.framework */; };
 		D3C90D4619FE136C00939406 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C90D4519FE136C00939406 /* CoreGraphics.framework */; };
 		D3C90D4819FE136C00939406 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C90D4719FE136C00939406 /* UIKit.framework */; };
@@ -51,6 +63,7 @@
 		D3C90DFF19FE14BF00939406 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C90DFE19FE14BF00939406 /* libz.1.1.3.dylib */; };
 		D3C90E0119FE19B400939406 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C90E0019FE19B400939406 /* libxml2.dylib */; };
 		D3C90E0319FE19F600939406 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C90E0219FE19F600939406 /* libxml2.2.dylib */; };
+		D3F536AC1A2CC6A80081EDDE /* BIDCommeMeathod.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F536AB1A2CC6A80081EDDE /* BIDCommeMeathod.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +77,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D31217021A2D6A6D00102A93 /* BIDAComplexMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDAComplexMode.h; sourceTree = "<group>"; };
+		D31217031A2D6A6D00102A93 /* BIDAComplexMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDAComplexMode.m; sourceTree = "<group>"; };
+		D31217061A2D976800102A93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		D328C3091A2D46550041F708 /* BIDObjectToNsDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BIDObjectToNsDictionary.h; path = Modle/Tools/BIDObjectToNsDictionary.h; sourceTree = "<group>"; };
+		D328C30A1A2D46550041F708 /* BIDObjectToNsDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BIDObjectToNsDictionary.m; path = Modle/Tools/BIDObjectToNsDictionary.m; sourceTree = "<group>"; };
+		D38788671A1198B700958851 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = SSKeychain.strings; sourceTree = "<group>"; };
+		D38788681A1198B700958851 /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSKeychain.h; path = SSKeychain/SSKeychain.h; sourceTree = "<group>"; };
+		D38788691A1198B700958851 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSKeychain.m; path = SSKeychain/SSKeychain.m; sourceTree = "<group>"; };
+		D387886A1A1198B700958851 /* SSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSKeychainQuery.h; path = SSKeychain/SSKeychainQuery.h; sourceTree = "<group>"; };
+		D387886B1A1198B700958851 /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSKeychainQuery.m; path = SSKeychain/SSKeychainQuery.m; sourceTree = "<group>"; };
+		D39A55621A287483002A7059 /* BIDUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDUser.h; sourceTree = "<group>"; };
+		D39A55631A287483002A7059 /* BIDUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDUser.m; sourceTree = "<group>"; };
+		D3A857AD1A04A6640061EB9A /* BIDLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BIDLoginViewController.h; path = FateApp/BIDLoginViewController.h; sourceTree = "<group>"; };
+		D3A857AE1A04A6640061EB9A /* BIDLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BIDLoginViewController.m; path = FateApp/BIDLoginViewController.m; sourceTree = "<group>"; };
+		D3A857B01A04B2BA0061EB9A /* BIDJsonConn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BIDJsonConn.h; path = ../Classes/BIDJsonConn.h; sourceTree = "<group>"; };
+		D3A857B11A04B2BA0061EB9A /* BIDJsonConn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BIDJsonConn.m; path = ../Classes/BIDJsonConn.m; sourceTree = "<group>"; };
+		D3B167271A0DB60B00445200 /* BIDCommcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDCommcode.h; sourceTree = "<group>"; };
+		D3B167281A0DB60B00445200 /* BIDCommcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDCommcode.m; sourceTree = "<group>"; };
+		D3BDA5B71A1E266F00A990CC /* BIDNewPoster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDNewPoster.h; sourceTree = "<group>"; };
+		D3BDA5B81A1E266F00A990CC /* BIDNewPoster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDNewPoster.m; sourceTree = "<group>"; };
+		D3BDA5BA1A1E272B00A990CC /* BIDPoster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDPoster.h; sourceTree = "<group>"; };
+		D3BDA5BB1A1E272B00A990CC /* BIDPoster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDPoster.m; sourceTree = "<group>"; };
+		D3BE888F1A064A36000BD33A /* BIDWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BIDWelcomeViewController.h; path = FateApp/BIDWelcomeViewController.h; sourceTree = "<group>"; };
+		D3BE88901A064A36000BD33A /* BIDWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BIDWelcomeViewController.m; path = FateApp/BIDWelcomeViewController.m; sourceTree = "<group>"; };
 		D3C90D4019FE136C00939406 /* FateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C90D4319FE136C00939406 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D3C90D4519FE136C00939406 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -75,8 +112,8 @@
 		D3C90D5219FE136C00939406 /* BIDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDAppDelegate.h; sourceTree = "<group>"; };
 		D3C90D5319FE136C00939406 /* BIDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDAppDelegate.m; sourceTree = "<group>"; };
 		D3C90D5619FE136C00939406 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D3C90D5819FE136C00939406 /* BIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDViewController.h; sourceTree = "<group>"; };
-		D3C90D5919FE136C00939406 /* BIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDViewController.m; sourceTree = "<group>"; };
+		D3C90D5819FE136C00939406 /* BIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BIDViewController.h; path = FateApp/BIDViewController.h; sourceTree = "<group>"; };
+		D3C90D5919FE136C00939406 /* BIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BIDViewController.m; path = FateApp/BIDViewController.m; sourceTree = "<group>"; };
 		D3C90D5B19FE136C00939406 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D3C90D6119FE136C00939406 /* FateAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FateAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C90D6219FE136C00939406 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -141,6 +178,8 @@
 		D3C90DFE19FE14BF00939406 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
 		D3C90E0019FE19B400939406 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		D3C90E0219FE19F600939406 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		D3F536AA1A2CC6A80081EDDE /* BIDCommeMeathod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BIDCommeMeathod.h; path = FateApp/Modle/BIDCommeMeathod.h; sourceTree = "<group>"; };
+		D3F536AB1A2CC6A80081EDDE /* BIDCommeMeathod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BIDCommeMeathod.m; path = FateApp/Modle/BIDCommeMeathod.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,9 +212,110 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D328C3051A2D45D50041F708 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D328C3091A2D46550041F708 /* BIDObjectToNsDictionary.h */,
+				D328C30A1A2D46550041F708 /* BIDObjectToNsDictionary.m */,
+			);
+			name = Tools;
+			path = FateApp;
+			sourceTree = "<group>";
+		};
+		D38788641A11987600958851 /* SSkeychainMaster */ = {
+			isa = PBXGroup;
+			children = (
+				D38788651A1198B700958851 /* en.lproj */,
+				D38788681A1198B700958851 /* SSKeychain.h */,
+				D38788691A1198B700958851 /* SSKeychain.m */,
+				D387886A1A1198B700958851 /* SSKeychainQuery.h */,
+				D387886B1A1198B700958851 /* SSKeychainQuery.m */,
+			);
+			name = SSkeychainMaster;
+			sourceTree = "<group>";
+		};
+		D38788651A1198B700958851 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				D38788661A1198B700958851 /* SSKeychain.strings */,
+			);
+			name = en.lproj;
+			path = SSKeychain/en.lproj;
+			sourceTree = "<group>";
+		};
+		D3A857B31A04B2D00061EB9A /* Conn */ = {
+			isa = PBXGroup;
+			children = (
+				D3A857B01A04B2BA0061EB9A /* BIDJsonConn.h */,
+				D3A857B11A04B2BA0061EB9A /* BIDJsonConn.m */,
+			);
+			name = Conn;
+			sourceTree = "<group>";
+		};
+		D3B167261A0DB5CC00445200 /* Modle */ = {
+			isa = PBXGroup;
+			children = (
+				D328C3051A2D45D50041F708 /* Tools */,
+				D3B167271A0DB60B00445200 /* BIDCommcode.h */,
+				D3B167281A0DB60B00445200 /* BIDCommcode.m */,
+				D3BDA5BA1A1E272B00A990CC /* BIDPoster.h */,
+				D3BDA5BB1A1E272B00A990CC /* BIDPoster.m */,
+				D39A55621A287483002A7059 /* BIDUser.h */,
+				D39A55631A287483002A7059 /* BIDUser.m */,
+				D3F536AA1A2CC6A80081EDDE /* BIDCommeMeathod.h */,
+				D3F536AB1A2CC6A80081EDDE /* BIDCommeMeathod.m */,
+				D31217021A2D6A6D00102A93 /* BIDAComplexMode.h */,
+				D31217031A2D6A6D00102A93 /* BIDAComplexMode.m */,
+			);
+			name = Modle;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D3BDA5B61A1E266F00A990CC /* Poster */ = {
+			isa = PBXGroup;
+			children = (
+				D3BDA5B71A1E266F00A990CC /* BIDNewPoster.h */,
+				D3BDA5B81A1E266F00A990CC /* BIDNewPoster.m */,
+			);
+			name = Poster;
+			path = FateApp/Poster;
+			sourceTree = "<group>";
+		};
+		D3BE88921A064A4A000BD33A /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				D3BDA5B61A1E266F00A990CC /* Poster */,
+				D3BE88941A064A7A000BD33A /* main */,
+				D3BE88931A064A58000BD33A /* login */,
+			);
+			name = Page;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D3BE88931A064A58000BD33A /* login */ = {
+			isa = PBXGroup;
+			children = (
+				D3C90D5819FE136C00939406 /* BIDViewController.h */,
+				D3C90D5919FE136C00939406 /* BIDViewController.m */,
+				D3A857AD1A04A6640061EB9A /* BIDLoginViewController.h */,
+				D3A857AE1A04A6640061EB9A /* BIDLoginViewController.m */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
+		D3BE88941A064A7A000BD33A /* main */ = {
+			isa = PBXGroup;
+			children = (
+				D3BE888F1A064A36000BD33A /* BIDWelcomeViewController.h */,
+				D3BE88901A064A36000BD33A /* BIDWelcomeViewController.m */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
 		D3C90D3719FE136C00939406 = {
 			isa = PBXGroup;
 			children = (
+				D38788641A11987600958851 /* SSkeychainMaster */,
 				D3C90DF019FE13DA00939406 /* External */,
 				D3C90D7819FE13D200939406 /* Classes */,
 				D3C90D4919FE136C00939406 /* FateApp */,
@@ -214,11 +354,12 @@
 		D3C90D4919FE136C00939406 /* FateApp */ = {
 			isa = PBXGroup;
 			children = (
+				D3B167261A0DB5CC00445200 /* Modle */,
+				D3BE88921A064A4A000BD33A /* Page */,
+				D3A857B31A04B2D00061EB9A /* Conn */,
 				D3C90D5219FE136C00939406 /* BIDAppDelegate.h */,
 				D3C90D5319FE136C00939406 /* BIDAppDelegate.m */,
 				D3C90D5519FE136C00939406 /* Main.storyboard */,
-				D3C90D5819FE136C00939406 /* BIDViewController.h */,
-				D3C90D5919FE136C00939406 /* BIDViewController.m */,
 				D3C90D5B19FE136C00939406 /* Images.xcassets */,
 				D3C90D4A19FE136C00939406 /* Supporting Files */,
 			);
@@ -437,6 +578,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D387886C1A1198B700958851 /* SSKeychain.strings in Resources */,
 				D3C90D5C19FE136C00939406 /* Images.xcassets in Resources */,
 				D3C90D4E19FE136C00939406 /* InfoPlist.strings in Resources */,
 				D3C90D5719FE136C00939406 /* Main.storyboard in Resources */,
@@ -464,19 +606,29 @@
 				D3C90DE019FE13D300939406 /* ASIS3ServiceRequest.m in Sources */,
 				D3C90DD019FE13D300939406 /* ASIHTTPRequest.m in Sources */,
 				D3C90DDE19FE13D300939406 /* ASIS3ObjectRequest.m in Sources */,
+				D328C30B1A2D46550041F708 /* BIDObjectToNsDictionary.m in Sources */,
 				D3C90DCB19FE13D300939406 /* ASIAuthenticationDialog.m in Sources */,
+				D387886D1A1198B700958851 /* SSKeychain.m in Sources */,
+				D3B167291A0DB60B00445200 /* BIDCommcode.m in Sources */,
 				D3C90DDF19FE13D300939406 /* ASIS3Request.m in Sources */,
 				D3C90DD419FE13D300939406 /* ASICloudFilesCDNRequest.m in Sources */,
+				D3F536AC1A2CC6A80081EDDE /* BIDCommeMeathod.m in Sources */,
 				D3C90DCF19FE13D300939406 /* ASIFormDataRequest.m in Sources */,
 				D3C90D5A19FE136C00939406 /* BIDViewController.m in Sources */,
 				D3C90DDD19FE13D300939406 /* ASIS3BucketRequest.m in Sources */,
+				D3A857B21A04B2BA0061EB9A /* BIDJsonConn.m in Sources */,
 				D3C90DD719FE13D300939406 /* ASICloudFilesContainerXMLParserDelegate.m in Sources */,
 				D3C90DD619FE13D300939406 /* ASICloudFilesContainerRequest.m in Sources */,
 				D3C90DD119FE13D300939406 /* ASIInputStream.m in Sources */,
 				D3C90DDA19FE13D300939406 /* ASICloudFilesRequest.m in Sources */,
+				D3BDA5B91A1E266F00A990CC /* BIDNewPoster.m in Sources */,
+				D31217041A2D6A6D00102A93 /* BIDAComplexMode.m in Sources */,
 				D3C90DD319FE13D300939406 /* ASIWebPageRequest.m in Sources */,
+				D39A55641A287483002A7059 /* BIDUser.m in Sources */,
 				D3C90DD519FE13D300939406 /* ASICloudFilesContainer.m in Sources */,
+				D387886E1A1198B700958851 /* SSKeychainQuery.m in Sources */,
 				D3C90DD919FE13D300939406 /* ASICloudFilesObjectRequest.m in Sources */,
+				D3BE88911A064A36000BD33A /* BIDWelcomeViewController.m in Sources */,
 				D3C90D5019FE136C00939406 /* main.m in Sources */,
 				D3C90DD219FE13D300939406 /* ASINetworkQueue.m in Sources */,
 				D3C90DDC19FE13D300939406 /* ASIS3BucketObject.m in Sources */,
@@ -484,6 +636,8 @@
 				D3C90DDB19FE13D300939406 /* ASIS3Bucket.m in Sources */,
 				D3C90DD819FE13D300939406 /* ASICloudFilesObject.m in Sources */,
 				D3C90DCE19FE13D300939406 /* ASIDownloadCache.m in Sources */,
+				D3A857AF1A04A6640061EB9A /* BIDLoginViewController.m in Sources */,
+				D3BDA5BC1A1E272B00A990CC /* BIDPoster.m in Sources */,
 				D3C90DF719FE13DA00939406 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +661,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		D38788661A1198B700958851 /* SSKeychain.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D38788671A1198B700958851 /* en */,
+			);
+			name = SSKeychain.strings;
+			sourceTree = "<group>";
+		};
 		D3C90D4C19FE136C00939406 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -519,6 +681,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D3C90D5619FE136C00939406 /* Base */,
+				D31217061A2D976800102A93 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -699,6 +862,7 @@
 				D3C90D7419FE136C00939406 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3C90D7519FE136C00939406 /* Build configuration list for PBXNativeTarget "FateAppTests" */ = {
 			isa = XCConfigurationList;
@@ -707,6 +871,7 @@
 				D3C90D7719FE136C00939406 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

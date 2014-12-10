@@ -8,13 +8,19 @@
 
 #import <Foundation/Foundation.h>
 #import "ASIHTTPRequest.h"
-#define  ServerUrl "http://192.168.211.1/ServiceForIOS.svc/"
+
+
 @protocol JsonConnDeleage<NSObject>
 @optional
 -(void)jsonRequestFinished;
+-(void)jsonRequestFinished:(NSDictionary *) requestdata;
 -(void)josnRequestError;
 @end;
 @interface BIDJsonConn : NSObject<ASIHTTPRequestDelegate>
 @property(assign,nonatomic) id<JsonConnDeleage>delegateforConn;
+@property(nonatomic,copy) NSString *mainUrl;
 -(void)PostdataByJsonAsy:(NSMutableDictionary *)datalist ExtensionUrl:(NSString *) inUrl;
+-(void)GetdataByJsonAsy:(NSString *)inUrl;
+-(NSDictionary *)GetdataByJsonSy:(NSString *)inUrl;
+-(id)init:(NSString *)initUrl;
 @end

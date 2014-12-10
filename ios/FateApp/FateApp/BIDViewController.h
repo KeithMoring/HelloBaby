@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ASIHTTPRequest.h"
+//#import "BIDLoginViewController.h"
 @interface BIDViewController : UIViewController<ASIHTTPRequestDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *lable;
 @property (weak, nonatomic) IBOutlet UIButton *TestWcf;
@@ -19,5 +20,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *text_userEmail;
 - (IBAction)btn_registerUser:(id)sender;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityView;
+
 
 @end

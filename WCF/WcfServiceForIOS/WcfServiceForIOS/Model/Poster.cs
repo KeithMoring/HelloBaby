@@ -27,5 +27,7 @@ namespace WcfServiceForIOS.Model
         public int OppsitionNum { get; set; }
          [DataMember]
         public int ScoresNum { get; set; }
+        [DataMember]
+        public DateTime PostTime { get;set;}
     }
 }

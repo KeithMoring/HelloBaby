@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.Data;
 using System.ServiceModel.Web;
 using WcfServiceForIOS.Model;
 namespace WcfServiceForIOS
@@ -22,6 +23,37 @@ namespace WcfServiceForIOS
             )]
         ConnectStatus SavePoster(Poster newPoster);
 
+
+        [OperationContract]
+        [WebInvoke(
+            Method = "POST",
+            BodyStyle = WebMessageBodyStyle.Wrapped,
+            RequestFormat = WebMessageFormat.Json,
+            ResponseFormat = WebMessageFormat.Json,
+            UriTemplate = "GetPosterByUserID"
+            )]
+        List<Poster> GetPosterByUserID(string User_ID,int pageStart,int pageEnd);
+
+        [OperationContract]
+        [WebInvoke(
+            Method = "POST",
+            BodyStyle = WebMessageBodyStyle.Wrapped,
+            RequestFormat = WebMessageFormat.Json,
+            ResponseFormat = WebMessageFormat.Json,
+            UriTemplate = "GPD"
+            )]
+        string GetPosterByUserIDTest(string User_ID, int pageStart, int pageEnd);
+        /*
+        [OperationContract]
+        [WebInvoke(
+            Method = "POST",
+            BodyStyle = WebMessageBodyStyle.Wrapped,
+            RequestFormat = WebMessageFormat.Json,
+            ResponseFormat = WebMessageFormat.Json,
+            UriTemplate = "GetPosterByUserTag"
+            )]
+        List<Poster> GetPosterByUserTag(string User_ID, int pageStart, int pageEnd);
+        */
         [OperationContract]
         [WebInvoke(Method = "GET",
                     ResponseFormat = WebMessageFormat.Json,
