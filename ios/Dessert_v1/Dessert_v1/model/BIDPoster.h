@@ -17,6 +17,7 @@
 @property(nonatomic)NSInteger LoveNum;
 @property NSInteger OppsitionNum;
 @property NSInteger ScoresNum;
+@property NSDate* posterDate;
 /*
  {"newPoster": {
  "User_ID":"6",

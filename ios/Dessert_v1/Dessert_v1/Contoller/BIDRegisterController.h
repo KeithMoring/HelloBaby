@@ -1,25 +1,21 @@
 //
-//  BIDViewController.h
-//  FateApp
+//  BIDRegisterController.h
+//  Dessert_v1
 //
-//  Created by fengxi on 14-10-27.
-//  Copyright (c) 2014年 fengxi. All rights reserved.
+//  Created by fengxi on 14-12-6.
+//  Copyright (c) 2014年 KeithMorning. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "ASIHTTPRequest.h"
-//#import "BIDLoginViewController.h"
-@interface BIDRegisterController : UIViewController<ASIHTTPRequestDelegate>
-@property (weak, nonatomic) IBOutlet UILabel *lable;
-@property (weak, nonatomic) IBOutlet UIButton *TestWcf;
-- (IBAction)TestforWcf:(id)sender;
-@property (weak, nonatomic) IBOutlet UILabel *WcfTestLable;
--(void)Createuser;
-@property (weak, nonatomic) IBOutlet UITextField *text_username;
-@property (weak, nonatomic) IBOutlet UITextField *text_userPassword;
-@property (weak, nonatomic) IBOutlet UITextField *text_userEmail;
-- (IBAction)btn_registerUser:(id)sender;
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityView;
+#import "AFNetworking.h"
+#import  "BIDCommcode.h"
+@interface BIDRegisterController : UITableViewController{
+    NSDictionary *para;
+}
+@property (weak, nonatomic) IBOutlet UITextField *Text_UserName;
+@property (weak, nonatomic) IBOutlet UITextField *Text_Password;
+- (IBAction)RegisterAction:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *Text_Email;
 
-
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *registerActivity;
 @end

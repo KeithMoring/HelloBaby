@@ -10,10 +10,13 @@
 #define KEY_LOGIN_NOT_PASS @"N"
 #define KEY_LOGIN_PASS     @"P"
 #define KEY_LOGIN_ERROR    @"E"
+#define KEY_REGISTER_SUCCESS @"1"
+#define KEY_REGISTER_ERROR  @"0"
 #define  ServerUrl "http://192.168.211.1/ServiceForIOS.svc/"
-#define PoserUrl "http://192.168.211.1/ServiceForIOSPoster.svc/" //182.92.230.154
+#define PoserUrl "http://192.168.211.1/ServiceForIOSPoster.svc/"
 //#define  ServerUrl "http://182.92.230.154:2122/ServiceForIOS.svc/"
 //#define PoserUrl "http://182.92.230.154:2122/ServiceForIOSPoster.svc/"
+#define getPosterResult @"GetPosterResult"
 @interface BIDCommcode : NSObject{
     
 }

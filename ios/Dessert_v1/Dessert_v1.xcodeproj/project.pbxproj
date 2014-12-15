@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D31614FE1A381B3000289675 /* BIDPosterCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D31614FD1A381B3000289675 /* BIDPosterCellModel.m */; };
 		D3169E131A332FBD00B0DB42 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3169E121A332FBD00B0DB42 /* Security.framework */; };
 		D3169E151A332FCC00B0DB42 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3169E141A332FCC00B0DB42 /* MobileCoreServices.framework */; };
 		D3169E171A332FEA00B0DB42 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3169E161A332FEA00B0DB42 /* SystemConfiguration.framework */; };
@@ -16,8 +17,12 @@
 		D31B18A61A33F46400364BF9 /* BIDMainHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31B18A41A33F46400364BF9 /* BIDMainHeaderView.xib */; };
 		D31B18AA1A33F4B300364BF9 /* BIDMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D31B18A81A33F4B300364BF9 /* BIDMainTableViewCell.m */; };
 		D31B18AB1A33F4B300364BF9 /* BIDMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31B18A91A33F4B300364BF9 /* BIDMainTableViewCell.xib */; };
-		D31B18AF1A33F4DA00364BF9 /* BIDMainFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D31B18AD1A33F4DA00364BF9 /* BIDMainFooterView.m */; };
-		D31B18B01A33F4DA00364BF9 /* BIDMainFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31B18AE1A33F4DA00364BF9 /* BIDMainFooterView.xib */; };
+		D33935C41A36AB8A009637CD /* BIDViewJump.m in Sources */ = {isa = PBXBuildFile; fileRef = D33935C31A36AB8A009637CD /* BIDViewJump.m */; };
+		D33935C71A36B6CF009637CD /* BIDUserInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33935C61A36B6CF009637CD /* BIDUserInfoController.m */; };
+		D33935CA1A36B6EC009637CD /* BIDNewPosterController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33935C91A36B6EC009637CD /* BIDNewPosterController.m */; };
+		D33935CD1A36B78C009637CD /* BIDPosterDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33935CC1A36B78C009637CD /* BIDPosterDetailController.m */; };
+		D33935CF1A36BE6E009637CD /* BIDMainFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33935CE1A36BE6E009637CD /* BIDMainFooterView.xib */; };
+		D33935D21A36C0CB009637CD /* BIDMainFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D33935D11A36C0CB009637CD /* BIDMainFooterView.m */; };
 		D373A2C41A32AA65001A3B11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D373A2C21A32AA65001A3B11 /* Main.storyboard */; };
 		D373A2CE1A32AAB4001A3B11 /* BIDCommcode.m in Sources */ = {isa = PBXBuildFile; fileRef = D373A2C71A32AAB4001A3B11 /* BIDCommcode.m */; };
 		D373A2D01A32AAB4001A3B11 /* BIDPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = D373A2CB1A32AAB4001A3B11 /* BIDPoster.m */; };
@@ -53,6 +58,7 @@
 		D3BEA8531A34BC63006D8898 /* 80px.png in Resources */ = {isa = PBXBuildFile; fileRef = D3BEA84D1A34BC63006D8898 /* 80px.png */; };
 		D3BEA8541A34BC63006D8898 /* 87px.png in Resources */ = {isa = PBXBuildFile; fileRef = D3BEA84E1A34BC63006D8898 /* 87px.png */; };
 		D3BEA8551A34BC63006D8898 /* appicon.psd in Resources */ = {isa = PBXBuildFile; fileRef = D3BEA84F1A34BC63006D8898 /* appicon.psd */; };
+		D3C9DD5E1A358C09004164F5 /* BIDAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C9DD5D1A358C09004164F5 /* BIDAccount.m */; };
 		D3D4F61F1A32A73900737C0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D4F61E1A32A73900737C0E /* main.m */; };
 		D3D4F6221A32A73900737C0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D4F6211A32A73900737C0E /* AppDelegate.m */; };
 		D3D4F62A1A32A73900737C0E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D4F6291A32A73900737C0E /* Images.xcassets */; };
@@ -71,6 +77,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D31614FC1A381B3000289675 /* BIDPosterCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDPosterCellModel.h; sourceTree = "<group>"; };
+		D31614FD1A381B3000289675 /* BIDPosterCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDPosterCellModel.m; sourceTree = "<group>"; };
 		D3169E121A332FBD00B0DB42 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D3169E141A332FCC00B0DB42 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		D3169E161A332FEA00B0DB42 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -84,9 +92,17 @@
 		D31B18A71A33F4B300364BF9 /* BIDMainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDMainTableViewCell.h; sourceTree = "<group>"; };
 		D31B18A81A33F4B300364BF9 /* BIDMainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDMainTableViewCell.m; sourceTree = "<group>"; };
 		D31B18A91A33F4B300364BF9 /* BIDMainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BIDMainTableViewCell.xib; sourceTree = "<group>"; };
-		D31B18AC1A33F4DA00364BF9 /* BIDMainFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDMainFooterView.h; sourceTree = "<group>"; };
-		D31B18AD1A33F4DA00364BF9 /* BIDMainFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDMainFooterView.m; sourceTree = "<group>"; };
-		D31B18AE1A33F4DA00364BF9 /* BIDMainFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BIDMainFooterView.xib; sourceTree = "<group>"; };
+		D33935C21A36AB8A009637CD /* BIDViewJump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDViewJump.h; sourceTree = "<group>"; };
+		D33935C31A36AB8A009637CD /* BIDViewJump.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDViewJump.m; sourceTree = "<group>"; };
+		D33935C51A36B6CF009637CD /* BIDUserInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDUserInfoController.h; sourceTree = "<group>"; };
+		D33935C61A36B6CF009637CD /* BIDUserInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDUserInfoController.m; sourceTree = "<group>"; };
+		D33935C81A36B6EC009637CD /* BIDNewPosterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDNewPosterController.h; sourceTree = "<group>"; };
+		D33935C91A36B6EC009637CD /* BIDNewPosterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDNewPosterController.m; sourceTree = "<group>"; };
+		D33935CB1A36B78C009637CD /* BIDPosterDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDPosterDetailController.h; sourceTree = "<group>"; };
+		D33935CC1A36B78C009637CD /* BIDPosterDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDPosterDetailController.m; sourceTree = "<group>"; };
+		D33935CE1A36BE6E009637CD /* BIDMainFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BIDMainFooterView.xib; sourceTree = "<group>"; };
+		D33935D01A36C0CB009637CD /* BIDMainFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDMainFooterView.h; sourceTree = "<group>"; };
+		D33935D11A36C0CB009637CD /* BIDMainFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDMainFooterView.m; sourceTree = "<group>"; };
 		D373A2C31A32AA65001A3B11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Dessert_v1/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D373A2C61A32AAB4001A3B11 /* BIDCommcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDCommcode.h; sourceTree = "<group>"; };
 		D373A2C71A32AAB4001A3B11 /* BIDCommcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDCommcode.m; sourceTree = "<group>"; };
@@ -151,7 +167,9 @@
 		D3BEA84D1A34BC63006D8898 /* 80px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80px.png; sourceTree = "<group>"; };
 		D3BEA84E1A34BC63006D8898 /* 87px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 87px.png; sourceTree = "<group>"; };
 		D3BEA84F1A34BC63006D8898 /* appicon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = appicon.psd; sourceTree = "<group>"; };
-		D3D4F6191A32A73900737C0E /* Dessert_v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dessert_v1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3C9DD5C1A358C09004164F5 /* BIDAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDAccount.h; sourceTree = "<group>"; };
+		D3C9DD5D1A358C09004164F5 /* BIDAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDAccount.m; sourceTree = "<group>"; };
+		D3D4F6191A32A73900737C0E /* Dessert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dessert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D4F61D1A32A73900737C0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3D4F61E1A32A73900737C0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D3D4F6201A32A73900737C0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -193,6 +211,15 @@
 			path = NetWork;
 			sourceTree = "<group>";
 		};
+		D33935C11A36AB66009637CD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D33935C21A36AB8A009637CD /* BIDViewJump.h */,
+				D33935C31A36AB8A009637CD /* BIDViewJump.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		D373A2C51A32AAB4001A3B11 /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +229,10 @@
 				D373A2CB1A32AAB4001A3B11 /* BIDPoster.m */,
 				D373A2CC1A32AAB4001A3B11 /* BIDUser.h */,
 				D373A2CD1A32AAB4001A3B11 /* BIDUser.m */,
+				D3C9DD5C1A358C09004164F5 /* BIDAccount.h */,
+				D3C9DD5D1A358C09004164F5 /* BIDAccount.m */,
+				D31614FC1A381B3000289675 /* BIDPosterCellModel.h */,
+				D31614FD1A381B3000289675 /* BIDPosterCellModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -215,6 +246,12 @@
 				D373A32D1A32AE08001A3B11 /* BIDLoginController.m */,
 				D373A32F1A32B0B7001A3B11 /* BIDMainController.h */,
 				D373A3301A32B0B7001A3B11 /* BIDMainController.m */,
+				D33935C51A36B6CF009637CD /* BIDUserInfoController.h */,
+				D33935C61A36B6CF009637CD /* BIDUserInfoController.m */,
+				D33935C81A36B6EC009637CD /* BIDNewPosterController.h */,
+				D33935C91A36B6EC009637CD /* BIDNewPosterController.m */,
+				D33935CB1A36B78C009637CD /* BIDPosterDetailController.h */,
+				D33935CC1A36B78C009637CD /* BIDPosterDetailController.m */,
 			);
 			path = Contoller;
 			sourceTree = "<group>";
@@ -222,6 +259,7 @@
 		D373A2DC1A32AACA001A3B11 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				D33935C11A36AB66009637CD /* Common */,
 				D3169E1B1A33564300B0DB42 /* NetWork */,
 				D373A2DD1A32AACA001A3B11 /* BIDCommeMeathod.h */,
 				D373A2DE1A32AACA001A3B11 /* BIDCommeMeathod.m */,
@@ -314,9 +352,9 @@
 				D31B18A71A33F4B300364BF9 /* BIDMainTableViewCell.h */,
 				D31B18A81A33F4B300364BF9 /* BIDMainTableViewCell.m */,
 				D31B18A91A33F4B300364BF9 /* BIDMainTableViewCell.xib */,
-				D31B18AC1A33F4DA00364BF9 /* BIDMainFooterView.h */,
-				D31B18AD1A33F4DA00364BF9 /* BIDMainFooterView.m */,
-				D31B18AE1A33F4DA00364BF9 /* BIDMainFooterView.xib */,
+				D33935CE1A36BE6E009637CD /* BIDMainFooterView.xib */,
+				D33935D01A36C0CB009637CD /* BIDMainFooterView.h */,
+				D33935D11A36C0CB009637CD /* BIDMainFooterView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -349,7 +387,7 @@
 		D3D4F61A1A32A73900737C0E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D3D4F6191A32A73900737C0E /* Dessert_v1.app */,
+				D3D4F6191A32A73900737C0E /* Dessert.app */,
 				D3D4F6321A32A73900737C0E /* Dessert_v1Tests.xctest */,
 			);
 			name = Products;
@@ -418,7 +456,7 @@
 			);
 			name = Dessert_v1;
 			productName = Dessert_v1;
-			productReference = D3D4F6191A32A73900737C0E /* Dessert_v1.app */;
+			productReference = D3D4F6191A32A73900737C0E /* Dessert.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D3D4F6311A32A73900737C0E /* Dessert_v1Tests */ = {
@@ -489,7 +527,7 @@
 				D373A2C41A32AA65001A3B11 /* Main.storyboard in Resources */,
 				D3BEA8501A34BC63006D8898 /* 120pt.png in Resources */,
 				D3BEA8541A34BC63006D8898 /* 87px.png in Resources */,
-				D31B18B01A33F4DA00364BF9 /* BIDMainFooterView.xib in Resources */,
+				D33935CF1A36BE6E009637CD /* BIDMainFooterView.xib in Resources */,
 				D3D4F62D1A32A73900737C0E /* LaunchScreen.xib in Resources */,
 				D3BEA8511A34BC63006D8898 /* 180pt.png in Resources */,
 				D31B18AB1A33F4B300364BF9 /* BIDMainTableViewCell.xib in Resources */,
@@ -512,16 +550,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3169E1A1A33502B00B0DB42 /* BIDJsonToDictionary.m in Sources */,
+				D33935CA1A36B6EC009637CD /* BIDNewPosterController.m in Sources */,
 				D373A3231A32AACA001A3B11 /* UIProgressView+AFNetworking.m in Sources */,
+				D33935D21A36C0CB009637CD /* BIDMainFooterView.m in Sources */,
 				D373A3241A32AACA001A3B11 /* UIRefreshControl+AFNetworking.m in Sources */,
 				D373A3251A32AACA001A3B11 /* UIWebView+AFNetworking.m in Sources */,
 				D373A3121A32AACA001A3B11 /* AFHTTPRequestOperation.m in Sources */,
 				D373A2CE1A32AAB4001A3B11 /* BIDCommcode.m in Sources */,
-				D31B18AF1A33F4DA00364BF9 /* BIDMainFooterView.m in Sources */,
+				D33935C41A36AB8A009637CD /* BIDViewJump.m in Sources */,
 				D373A31C1A32AACA001A3B11 /* SSKeychain.m in Sources */,
 				D3D4F6221A32A73900737C0E /* AppDelegate.m in Sources */,
 				D3169E1E1A33566700B0DB42 /* BIDAFNetWork.m in Sources */,
+				D3C9DD5E1A358C09004164F5 /* BIDAccount.m in Sources */,
 				D373A32E1A32AE08001A3B11 /* BIDLoginController.m in Sources */,
+				D33935CD1A36B78C009637CD /* BIDPosterDetailController.m in Sources */,
 				D373A3101A32AACA001A3B11 /* BIDCommeMeathod.m in Sources */,
 				D373A31F1A32AACA001A3B11 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				D373A31A1A32AACA001A3B11 /* AFURLSessionManager.m in Sources */,
@@ -542,6 +584,8 @@
 				D373A3201A32AACA001A3B11 /* UIAlertView+AFNetworking.m in Sources */,
 				D373A2D01A32AAB4001A3B11 /* BIDPoster.m in Sources */,
 				D373A3161A32AACA001A3B11 /* AFSecurityPolicy.m in Sources */,
+				D33935C71A36B6CF009637CD /* BIDUserInfoController.m in Sources */,
+				D31614FE1A381B3000289675 /* BIDPosterCellModel.m in Sources */,
 				D373A3111A32AACA001A3B11 /* BIDObjectToNsDictionary.m in Sources */,
 				D373A3311A32B0B7001A3B11 /* BIDMainController.m in Sources */,
 				D373A3211A32AACA001A3B11 /* UIButton+AFNetworking.m in Sources */,
@@ -675,11 +719,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Guodong Wang (2NNCK9VP87)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: guodong wang (3GB4GVELV9)";
 				INFOPLIST_FILE = Dessert_v1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = Dessert_v1;
+				PRODUCT_NAME = Dessert;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -688,11 +732,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Guodong Wang (2NNCK9VP87)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: guodong wang (3GB4GVELV9)";
 				INFOPLIST_FILE = Dessert_v1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = Dessert_v1;
+				PRODUCT_NAME = Dessert;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -712,7 +756,7 @@
 				INFOPLIST_FILE = Dessert_v1Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = Dessert_v1Tests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dessert_v1.app/Dessert_v1";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dessert.app/Dessert";
 			};
 			name = Debug;
 		};
@@ -727,7 +771,7 @@
 				INFOPLIST_FILE = Dessert_v1Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = Dessert_v1Tests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dessert_v1.app/Dessert_v1";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dessert.app/Dessert";
 			};
 			name = Release;
 		};
