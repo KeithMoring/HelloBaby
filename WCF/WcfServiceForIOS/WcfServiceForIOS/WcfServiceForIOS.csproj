@@ -116,6 +116,7 @@
     <Compile Include="Model\Disease.cs" />
     <Compile Include="Model\Poster.cs" />
     <Compile Include="Model\Users.cs" />
+    <Compile Include="Model\VoteAcion.cs" />
     <Compile Include="ServiceForIOSPoster.svc.cs">
       <DependentUpon>ServiceForIOSPoster.svc</DependentUpon>
     </Compile>

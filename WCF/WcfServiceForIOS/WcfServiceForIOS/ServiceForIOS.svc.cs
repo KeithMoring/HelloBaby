@@ -91,7 +91,7 @@ namespace WcfServiceForIOS
             
         }
         /// <summary>
-        /// if return N is not pass ,P is pass ,E is error may be network
+        /// if return N is not pass ,P is pass ,E is error may be network,result is userid
         /// </summary>
         /// <param name="name"></param>
         /// <param name="password"></param>
@@ -110,12 +110,12 @@ namespace WcfServiceForIOS
                 parameters.Add(p_name);               
                 parameters.Add(p_password);
                string result= con.getdata(pass, parameters, "string", 10, "LoginCheck");
-                if (result == "Yes")
+                if (result == "No")
                 {
-                    return "P";
+                    return "N";
                 }
                 else {
-                    return "N";
+                    return result;
                 }
                 
                 

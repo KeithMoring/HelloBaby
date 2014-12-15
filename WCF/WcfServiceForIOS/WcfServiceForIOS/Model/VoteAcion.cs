@@ -5,13 +5,10 @@ using System.Web;
 
 namespace WcfServiceForIOS.Model
 {
-
-    public enum ConnectStatus
+    public enum VoteAction
     {
-        ActionFailed=0,
-        ActionSuccess
-        
+        VoteCancle = 0,
+        VoteUp,
+        VoteDown
     }
-
-    
 }

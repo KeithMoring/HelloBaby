@@ -43,6 +43,16 @@ namespace WcfServiceForIOS
             UriTemplate = "GPD"
             )]
         string GetPosterByUserIDTest(string User_ID, int pageStart, int pageEnd);
+
+        [OperationContract]
+        [WebInvoke(
+            Method = "GET",
+            BodyStyle = WebMessageBodyStyle.Wrapped,
+            RequestFormat = WebMessageFormat.Json,
+            ResponseFormat = WebMessageFormat.Json,
+            UriTemplate = "GetPoster/{User_ID}/{pageStart}/{pageEnd}"
+            )]
+        List<Poster> GetPoster(string User_ID,string pageStart, string pageEnd);
         /*
         [OperationContract]
         [WebInvoke(
@@ -60,5 +70,39 @@ namespace WcfServiceForIOS
                     BodyStyle = WebMessageBodyStyle.Wrapped,
                     UriTemplate = "json/{id}")]
         string JSONData(string id);
+
+        #region---the vote up and vote down
+        [OperationContract]
+        [WebInvoke(
+            Method = "Get",
+            BodyStyle = WebMessageBodyStyle.Wrapped,
+            RequestFormat = WebMessageFormat.Json,
+            ResponseFormat = WebMessageFormat.Json,
+            UriTemplate = "PosterVoteUp/{User_ID}/{Poster_id}"
+            )]
+        ConnectStatus PosterVoteUp(string User_ID, string Poster_id);
+
+        [OperationContract]
+        [WebInvoke(
+            Method = "Get",
+            BodyStyle = WebMessageBodyStyle.Wrapped,
+            RequestFormat = WebMessageFormat.Json,
+            ResponseFormat = WebMessageFormat.Json,
+            UriTemplate = "PosterVoteCancel/{User_ID}/{Poster_id}"
+            )]
+        ConnectStatus PosterVoteCancel(string User_ID, string Poster_id);
+
+        [OperationContract]
+        [WebInvoke(
+            Method = "Get",
+            BodyStyle = WebMessageBodyStyle.Wrapped,
+            RequestFormat = WebMessageFormat.Json,
+            ResponseFormat = WebMessageFormat.Json,
+            UriTemplate = "PosterVoteDown/{User_ID}/{Poster_id}"
+            )]
+        ConnectStatus PosterVoteDown(string User_ID, string Poster_id);
+
+
+        #endregion
     }
 }

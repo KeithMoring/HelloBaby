@@ -15,6 +15,8 @@ namespace WcfServiceForIOS.Model
         public int User_ID { get; set; }
         [DataMember]
         public string Title {get;set; }
+        [DataMember]
+        public string User_Name { get; set; }
          [DataMember]
         public string PosterInput { get; set; }
          [DataMember]
@@ -29,5 +31,7 @@ namespace WcfServiceForIOS.Model
         public int ScoresNum { get; set; }
         [DataMember]
         public DateTime PostTime { get;set;}
+        [DataMember]
+        public string PosterID { get; set; }
     }
 }
