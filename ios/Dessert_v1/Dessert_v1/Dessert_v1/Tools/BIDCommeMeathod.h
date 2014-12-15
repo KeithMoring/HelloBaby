@@ -12,4 +12,6 @@
 
 -(id)init;
 +(NSString *)getUserIDByLocal;
++(NSString *)getuserName;
++(NSString *)GetJsonDate:(NSString *)string;
 @end

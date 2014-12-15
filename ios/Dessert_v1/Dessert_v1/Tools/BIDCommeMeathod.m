@@ -17,11 +17,6 @@ static NSUserDefaults *UserDef;
     }
     return self;
 }
-+(NSString *)getuserName{
-    UserDef=[NSUserDefaults standardUserDefaults];
-    NSString *username= [UserDef objectForKey:@"username"];
-    return username;
-}
 +(NSString *)getUserIDByLocal{
     UserDef=[NSUserDefaults standardUserDefaults];
     NSString *id= [UserDef objectForKey:@"UserID"];
